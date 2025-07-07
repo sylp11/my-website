@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End The Water Crisis</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-panel {
+            background-color: #FFD400;
+            flex: 1;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .left-panel h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .left-panel p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .donate-button {
+            background-color: transparent;
+            border: 3px solid black;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .donate-button::after {
+            content: '\2192'; /* right arrow */
+            position: absolute;
+            right: -30px;
+            font-size: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .right-panel {
+            flex: 1;
+        }
+
+        .right-panel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-panel, .right-panel {
+                width: 100%;
+                height: auto;
+            }
+
+            .left-panel h1 {
+                font-size: 2rem;
+            }
+
+            .left-panel p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Be The Generation<br>That Ends The Water Crisis</h1>
+            <p>Your donation brings clean water and real change to our communities in need. Join students turning their passion into impact. <strong>Donatet oday.</strong></p>
+            <a href="#" class="donate-button">DONATE</a>
+        </div>
+        <div class="right-panel">
+            <img src="https://via.placeholder.com/500x700" alt="Girl at water pump">
+        </div>
+    </div>
+</body>
+</html>
